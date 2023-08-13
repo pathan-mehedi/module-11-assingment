@@ -1,23 +1,18 @@
-import Link from 'next/link';
+import '../styles/global.css';
+import Header from '../components/Header';
 import styles from '../styles/home.module.css';
 import fadeIn from '../styles/transitions.module.css';
 
 const Home = () => {
   return (
-    <div className={`${styles.content} ${fadeIn['fade-in']}`}>
-      <h1>Welcome to Our Simple Blog</h1>
-      <p>Explore our blog posts and learn something new!</p>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About Us</Link>
-        </li>
-        <li>
-          <Link href="/blog">Blog Post</Link>
-        </li>
-      </ul>
+    <div className={`${styles.pageContainer} ${fadeIn['fade-in']}`}>
+      <Header />
+      <div className={styles.content}>
+        <h1 className={styles.title}>Welcome to MTS Sample Blog</h1>
+        <p className={styles.subtitle}>
+          Explore our blog, learn about our team, and stay updated with the latest tech trends.
+        </p>
+      </div>
     </div>
   );
 };

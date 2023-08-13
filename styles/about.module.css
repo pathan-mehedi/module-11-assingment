@@ -1,37 +1,41 @@
-/* about.module.css */
-
-.content {
-  padding: 2rem;
-  text-align: center;
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: #f5f5f5;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
 .paragraph {
   font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
-.link {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: white;
+.backButton {
+  margin-top: 2rem;
+}
+
+.back-link {
+  font-size: 1rem;
+  color: #007bff;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 
-.link:hover {
-  background-color: #0056b3;
+.back-link:hover {
+  color: #0056b3;
 }
