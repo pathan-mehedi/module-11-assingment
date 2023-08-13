@@ -1,0 +1,16 @@
+/* styles/blog.module.css */
+.post-link {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .post-link:hover {
+    background-color: #e0e0e0;
+  }
+  
