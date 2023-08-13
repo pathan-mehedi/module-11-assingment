@@ -1,35 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project: Simple Blog Website with Next.js 13
 
-## Getting Started
+## Description
+This project is a simple blog website built using Next.js, a popular React framework. The website allows users to view a list of blog posts, read individual posts, and navigate between different pages. The project showcases the use of Next.js for creating dynamic pages, client-side routing, and styling with CSS modules.
 
-First, run the development server:
+## Features
+- **Home Page**: Displays a welcome message and provides a link to the Blog page.
+- **Blog Page**: Lists multiple blog post titles. Clicking on a title navigates to the respective Post page.
+- **Post Page**: Displays the title, content, and date of a single blog post.
+- **About Page**: Provides information about the website and its purpose.
+- **Modern Styling**: Utilizes CSS modules for styling with modern and animated design.
+- **Responsive Design**: Ensures the website looks great on various screen sizes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## How to Run the Project
+1. Ensure you have Node.js installed on your computer.
+2. Clone this repository using the following command:
+
+```
+git clone https://github.com/pathan-mehedi/module-11-assingment.git
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Navigate to the project directory:
+```
+cd module-11-assingment
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Install project dependencies:
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+5. Run the development server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+6. Open your web browser and go to http://localhost:3000 to view the website.
 
-## Deploy on Vercel
+## Project Deployment
+The website is deployed and accessible online at the following URL:
+[https://mts-ostad11assingment-sample-blog.netlify.app/](https://mts-ostad11assingment-sample-blog.netlify.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## GitHub Repository
+You can find the source code for this project on GitHub:
+[https://github.com/pathan-mehedi/module-11-assingment](https://github.com/pathan-mehedi/module-11-assingment)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# module-11-assingment
+## Project Structure
+- **pages/**
+- `index.jsx`: Home page
+- `blog.jsx`: Blog page listing post titles
+- `[id].jsx`: Individual post page using dynamic routing
+- `about.jsx`: About page
+- **data/**
+- `blogData.json`: JSON file containing blog post data
+- **styles/**
+- `global.css`: Global CSS styles
+- `header.module.css`: Styles for the header component
+- `post.module.css`: Styles for individual post page
+- `transitions.module.css`: Styles for page transitions
+- **components/**
+- `Header.jsx`: Header component with navigation links
+- **public/**
+- `favicon.ico`: Favicon for the website
+- **node_modules/**: Node.js dependencies (created after running "npm install")
+- `package.json`: Project configuration and dependency list
+- `package-lock.json`: Detailed information about installed packages
+- `README.md`: Project documentation and information
+- `.gitignore`: Specifies which files should not be tracked by Git
+
+---
