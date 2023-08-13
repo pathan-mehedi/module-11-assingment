@@ -5,47 +5,141 @@
   background-color: #f5f5f5;
 }
 
+
 .content {
-  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
+  justify-content: space-between;
+  align-items: self-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .title {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+}
+
+/* blog.module.css */
+/* ... (previous styles) */
+
+.searchBar {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.searchInput {
+  flex-grow: 1;
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+  outline: none;
+  font-size: 16px;
+}
+
+.searchInput::placeholder {
+  color: #999;
+}
+
+.searchButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
 }
 
 .postList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .post-link {
-  font-size: 1.2rem;
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .post-link:hover {
-  color: #0056b3;
+  background-color: #e0e0e0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.paginationContainer {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.paginationContainerCustom {
+  margin: 0;
+  padding: 0;
+}
+
+.paginationPage {
+  background-color: #f4f4f4;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.paginationPage:hover {
+  background-color: #e0e0e0;
+}
+
+.paginationLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.paginationLink:hover {
+  color: #555;
+}
+
+.paginationDisabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.paginationActive {
+  background-color: #007bff;
+  color: #fff;
+  cursor: default;
 }
 
 .backButton {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 
 .back-link {
-  font-size: 1rem;
   color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .back-link:hover {
