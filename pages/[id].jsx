@@ -1,4 +1,4 @@
-import "../styles/global.css";
+import "../styles/globals.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/post.module.css";
@@ -26,7 +26,7 @@ const Post = () => {
                 <div className={styles.postContent}>{post.content}</div>
                 <div className={styles.backButton}>
                     <Link href='/blog' passHref>
-                        <div className={styles["back-link"]}>Back to Blog</div>
+                        <div className={styles["back-link"]}>&#8592; &nbsp;Back to Blog</div>
                     </Link>
                 </div>
             </div>

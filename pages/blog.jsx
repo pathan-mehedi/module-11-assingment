@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/global.css";
+import "../styles/globals.css";
 import Link from "next/link";
 import Header from "../components/Header";
 import styles from "../styles/blog.module.css";
@@ -20,7 +20,6 @@ const Blog = () => {
     const startIndex = currentPage * postsPerPage;
     const endIndex = startIndex + postsPerPage;
 
-    // Filter posts based on search term
     const filteredPosts = blogData.filter((post) =>
         post.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -55,7 +54,7 @@ const Blog = () => {
                 </div>
                 <div className={styles.pagination}>
                     <ReactPaginate
-                        previousLabel={"Previous"}
+                        previousLabel={"Prev"}
                         nextLabel={"Next"}
                         breakLabel={"..."}
                         pageCount={totalPages}
@@ -72,7 +71,7 @@ const Blog = () => {
                 </div>
                 <div className={styles.backButton}>
                     <Link href='/' passHref>
-                        <div className={styles["back-link"]}>Back to Home</div>
+                        <div className={styles["back-link"]}>&#8592; &nbsp;Back to Home</div>
                     </Link>
                 </div>
             </div>

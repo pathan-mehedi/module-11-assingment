@@ -57,7 +57,7 @@ You can find the source code for this project on GitHub:
 - **data/**
 - `blogData.json`: JSON file containing blog post data
 - **styles/**
-- `global.css`: Global CSS styles
+- `globals.css`: globals CSS styles
 - `header.module.css`: Styles for the header component
 - `post.module.css`: Styles for individual post page
 - `transitions.module.css`: Styles for page transitions

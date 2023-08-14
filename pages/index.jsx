@@ -1,4 +1,4 @@
-import '../styles/global.css';
+import '../styles/globals.css';
 import Header from '../components/Header';
 import styles from '../styles/home.module.css';
 import fadeIn from '../styles/transitions.module.css';
