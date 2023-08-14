@@ -25,3 +25,24 @@
   color: #666;
   margin-bottom: 2rem;
 }
+
+.goToBlogButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.go-to-blog-button {
+  background-color: #2664a7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.go-to-blog-button:hover {
+  background-color: #2875c7;
+}
