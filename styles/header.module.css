@@ -3,6 +3,7 @@
   color: white;
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .nav {
@@ -21,12 +22,66 @@
   color: white;
 }
 
+.mobileMenuButton {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 100;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+}
+
+.bar {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 3px 0;
+}
+
 .navLinks {
   list-style: none;
   display: flex;
   gap: 2rem;
+  position: relative;
+}
+
+.navLinks.open {
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #329c4b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 99;
 }
 
 .navLinks li {
   font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+/* Media Query for Mobile Menu */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
 }

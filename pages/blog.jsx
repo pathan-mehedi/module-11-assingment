@@ -45,13 +45,20 @@ const Blog = () => {
                 </div>
                 <div className={styles.postList}>
                     {currentPosts.map((post) => (
-                        <Link href={`/${post.id}`} key={post.id} passHref>
-                            <div className={styles["post-link"]}>
-                                {post.title}
-                            </div>
-                        </Link>
+                        <div className={styles["post-link"]} key={post.id}>
+                            <Link href={`/${post.id}`} passHref>
+                                <div>
+                                    <h2>{post.title}</h2>
+                                    <p>{post.content.slice(0, 80)}...</p>
+                                    <Link href={`/${post.id}`}>
+                                        <div className={styles["readMore_btn"]}>Read More&nbsp; &#8594;</div>
+                                    </Link>
+                                </div>
+                            </Link>
+                        </div>
                     ))}
                 </div>
+
                 <div className={styles.pagination}>
                     <ReactPaginate
                         previousLabel={"Prev"}
@@ -71,7 +78,9 @@ const Blog = () => {
                 </div>
                 <div className={styles.backButton}>
                     <Link href='/' passHref>
-                        <div className={styles["back-link"]}>&#8592; &nbsp;Back to Home</div>
+                        <div className={styles["back-link"]}>
+                            &#8592; &nbsp;Back to Home
+                        </div>
                     </Link>
                 </div>
             </div>

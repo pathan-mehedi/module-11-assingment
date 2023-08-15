@@ -79,6 +79,16 @@
   background-color: #e0e0e0;
 }
 
+.readMore_btn {
+  color: rgba(0, 0, 0, 0.701);
+  margin-top: 15px;
+}
+
+.readMore_btn:hover {
+  transform: translateX(5px);
+  transition: transform 0.2s;
+}
+
 .pagination {
   display: flex;
   justify-content: center;

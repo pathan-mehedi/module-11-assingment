@@ -1,11 +1,10 @@
 import "../styles/globals.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Header from "@/components/Header";
 import styles from "../styles/post.module.css";
 import fadeIn from "../styles/transitions.module.css";
-
 import blogData from "../data/blogData.json";
-import Header from "@/components/Header";
 
 const Post = () => {
     const router = useRouter();
